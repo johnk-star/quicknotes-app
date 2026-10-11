@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+
+#note-form {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 200px;
+}
+
+input[type="text"], select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+button {
+    padding: 9px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 8px;
+}
+
+#search-input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#notes-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Note Card Styling */
+.note-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.note-content {
+    flex: 1;
+}
+
+.note-meta {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Category Left Borders */
+.category-personal {
+    border-left: 6px solid #1abc9c; /* teal */
+}
+
+.category-work {
+    border-left: 6px solid #c0392b; /* dark red */
+}
+
+.category-study {
+    border-left: 6px solid #2980b9; /* blue */
+}
+
+.category-badge {
+    font-size: 0.75rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: #eee;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Responsive design for screens 600px or narrower */
+@media (max-width: 600px) {
+    #note-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #777;
+    font-size: 0.85rem;
+}
